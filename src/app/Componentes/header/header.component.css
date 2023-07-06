@@ -1,0 +1,129 @@
+/* NAVBAR */
+header{
+    width: 100vw;
+    height: 80px;
+    background: #e1dfdf18;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+    /* position: fixed; */
+}
+
+.logo{
+    font-size: 28px;
+
+}
+
+.logo img{
+    width: 40%;
+    
+}
+
+.hamburger{
+    display: none;
+}
+
+.nav-bar ul{
+    display: flex;
+}
+
+
+.nav-bar ul li a{
+    display: block;
+    color: #3d3d3d;
+    font-size: 20px;
+    padding: 10px 25px;
+    border-radius: 10px;
+    /* transition: 0.15s; */
+    margin: 0 5px;
+}
+
+.nav-bar ul li a i{
+    color: #454545;
+    filter: drop-shadow(0 0 30px #dcdcdc);
+}
+.nav-bar ul li a:hover{
+    color: #202020;
+    background-color: #fffdfd49;
+    filter: drop-shadow(0 0 30px #dcdcdc);
+    
+    border: 2px solid #dcdcdc;
+}
+
+.nav-bar ul li a.active{
+    color: #202020;
+    background-color: #fffdfd49;
+    filter: drop-shadow(0 0 20px #dcdcdc);
+    border: 2px solid #dcdcdc;
+}
+
+/* RESPONSIVE DEL NAVBAR */
+@media only screen and (max-width: 1320px){
+    header{
+        padding: 0 50px;
+    }
+}
+@media only screen and (max-width: 1100px){
+    header{
+        padding: 0 30px;
+    }
+}
+@media only screen and (max-width: 900px){
+    header{
+        position:relative;
+    }
+    .hamburger{
+        display: block;
+        cursor: pointer;
+    }
+    .hamburger .line{
+        width: 30px;
+        height: 3px;
+        background-image: linear-gradient(115deg, rgba(255, 255, 255, 0.66),rgba(30, 23, 22, 0.585));
+        margin: 6px 0;
+    }
+    .nav-bar{
+        height: 0;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background: #2d2d2d;
+        transition: 0.5s;
+        overflow: hidden;
+    }
+    .nav-bar.active{
+        height: 480px;
+    }
+    .nav-bar.active ul{
+        opacity: 1;
+    }
+    .nav-bar ul{
+        display: block;
+        width: fit-content;
+        margin: 80px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+        opacity: 0;
+    }
+    .nav-bar ul li a{
+        margin-bottom: 12px;
+    }
+    .nav-bar ul li a.fa-arrow-right-to-bracket{
+        margin-bottom: 12px;
+    }
+    .nav-bar ul li a i{
+        color: #dcdcdc;
+    }
+    .logo {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 900px){
+    .nav-bar ul{
+        margin: 20px auto 0 auto;
+    }
+}

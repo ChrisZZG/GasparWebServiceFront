@@ -1,0 +1,38 @@
+<!-- CONTACTO -->
+<section id="contact">
+    <h2>CONTACTA CON NOSOTROS</h2>
+    <div class="contact_grid">
+        <div class="contact_info">
+            <div>
+                <h3>CEO</h3>
+                <p>{{persona.nombre}}</p>
+                <br>
+                <h3>Email</h3>
+                <p>{{persona.email}}</p>
+                <br>
+                <h3>Telephone</h3>
+                <p>{{persona.telefono}}</p>
+                <br>
+                <hr>
+                <button *ngIf="isLogged" routerLink="/editcontactinfo/1">
+                    EditContactInfo
+                </button>
+            </div>
+
+            <div class="contact_icons">
+                <ul>
+                    <li><a href="mailto:cristiangonzz@gmail.com? subject=subject text" target="_blank">
+                            <i class="fa-sharp fa-solid fa-envelope"></i>
+                        </a></li>
+                    <li><a href="https://www.instagram.com/gaspar_noeh/" target="_blank">
+                            <i class="fa-brands fa-square-instagram"></i>
+                        </a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="contact_logo">
+            <div class="line_logo"></div>
+            <img src="assets/logoGaspar.png" alt="logoGaspar">
+        </div>
+    </div>
+</section>

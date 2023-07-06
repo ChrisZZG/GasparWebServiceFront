@@ -1,0 +1,63 @@
+/* QUIENES SOMOS */
+
+#aboutus{
+    border-left: 1px solid #dcdcdc;
+    border-right: 1px solid #dcdcdc;
+    width: 80vw;
+
+}
+
+.aboutus{
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.abouttext{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+}
+.abouttext ul{
+    text-align: center;
+    align-items: center;
+}
+.abouttext ul li{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    margin: auto;
+    width: 60vw;
+    padding-top: 50px;
+    font-size: 25px;
+    text-align: center;
+    padding-left: 15%;
+}
+
+.abouttext ul li i{
+    text-align: right;
+    justify-content: center;
+}
+
+.fa-solid{
+    color: #dcdcdc;
+    filter: drop-shadow(0 0 20px #dcdcdc);
+}
+
+/* RESPONSIVE ABOUT US */
+@media only screen and (max-width: 700px){
+    .abouttext p{
+        font-size: 20px;
+    }
+    .abouttext ul{
+        
+        text-align: left;
+    }
+    .abouttext ul li{
+        gap:10px;
+        padding-left: 0;
+    }
+}

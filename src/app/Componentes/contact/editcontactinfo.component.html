@@ -1,0 +1,19 @@
+<div *ngIf="persona">
+    <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+        <div>
+            <label for="nombre">Nombres y Apellidos</label>
+            <input type="text" id="nombre" name="nombre" [(ngModel)]="persona.nombre" required="">
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" [(ngModel)]="persona.email" required="">
+        </div>
+        <div>
+            <label for="telefono">Telephone</label>
+            <input type="text" id="telefono" name="telefono" [(ngModel)]="persona.telefono" required="">
+        </div>
+        <button type="submit">
+            Actualizar Informacion
+        </button>
+    </form>
+</div>

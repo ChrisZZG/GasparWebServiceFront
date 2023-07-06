@@ -1,0 +1,26 @@
+/* SECTION COPYRIGHT */
+
+#copyright{
+    margin: auto;
+    background-color: #dcdcdc;
+    filter: drop-shadow(0 0 20px #dcdcdc);
+    width: 80vw;
+    height: 50px;
+    margin-bottom: 30px;
+    text-align: center;
+    justify-content: center;
+    
+}
+
+#copyright p{
+    
+    position:relative;
+    top: 30%;
+    color: #3c3a3a;
+    font-size: 15px;
+    text-align: center;
+    margin: auto;
+    justify-content: center;
+
+
+}

@@ -1,0 +1,136 @@
+/* PROJECTS */
+
+#projects{
+    margin: auto;
+    width: 80vw;
+    text-align: center;
+    justify-content: center;
+    margin-top: 40px;
+    padding: 0 10px;
+    border-left: 1px solid #dcdcdc;
+    border-right: 1px solid #dcdcdc;
+}
+#projects h3{
+    font-size: 30px;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
+
+#projects h3 a{
+    color: #dcdcdc;
+}
+
+#projects h3 a:hover{
+    color: rgb(222, 75, 62);
+}
+.container {
+	width: 90%;
+	max-width: 1200px;
+	margin: 100px auto;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+
+.container::after {
+	content: "";
+	width: 2px;
+	height: 100%;
+	background: rgb(222, 75, 62);
+	position: absolute;
+	top: 0;
+	left: calc(50% - 1px);
+	z-index: 1;
+}
+
+.evento {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 100px;
+	position: relative;
+}
+
+.evento::after {
+	content: "";
+	display: block;
+	width: 14px;
+	height: 14px;
+	border-radius: 100px;
+	background: #DCDFD9;
+	border: 2px solid #1b3231;
+	position: absolute;
+	z-index: 2;
+	top: calc(50% - 9px);
+	left: calc(50% - 9px);
+}
+
+.fecha {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	width: calc(42% + 20px);
+	font-size: 20px;
+	font-weight: normal;
+
+}
+
+.foto {
+	width: 42%;
+	border: 5px solid #fff;
+	position: relative;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+}
+
+.foto::after {
+	content: "";
+	display: block;
+	border: 20px solid transparent;
+	border-left: 20px solid #fff;
+	position: absolute;
+	right: -50px;
+	top: calc(50% - 20px);
+}
+
+.foto img {
+	width: 100%;
+	vertical-align: top;
+}
+
+.evento:nth-child(even) {
+	flex-direction: row-reverse;
+}
+
+.evento:nth-child(even) .fecha {
+	justify-content: end;
+}
+
+.evento:nth-child(even) .foto::after {
+	content: "";
+	border: 20px solid transparent;
+	border-right: 20px solid #fff;
+	right: initial;
+	left: -50px;
+}
+
+
+
+/* RESPONSIVIDAD PROJECTS */
+@media screen and (max-width: 900px){
+    .carousel img{
+        width: calc(100% / 2);
+    }
+    #projects h3{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 550px){
+    .carousel img{
+        width: 100%;
+    }
+    #projects h3{
+        font-size: 20px;
+    }
+} 

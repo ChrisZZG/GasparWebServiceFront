@@ -1,0 +1,163 @@
+/* SECCION HERO */
+
+.hero{
+    width: 100vw;
+    height: 90vh;
+    margin: auto;
+}
+
+.uno{
+    width: 100%;
+    height: 100%;
+}
+.uno img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.dos{
+    position: relative;
+    z-index: 10;
+    top: -75%;
+    left: 10%;
+    width: 40%;
+    height: 50%;
+    border-radius: 10px;
+    background-color: #fffdfd49;
+    filter: drop-shadow(0 0 20px #dcdcdc);
+    color: #2d2d2d;
+    border: 2px solid #dcdcdc;
+
+}
+
+.dos h2 {
+    text-align: center;
+    font-size: 30px;
+    justify-content: center;
+    padding-top: 20px;
+    margin-top: 10%;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+}
+.btn button {
+    padding: 20px 40px 20px 40px;
+    color: #dcdcdc;
+    background-color: #e94b0d;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    padding-top: 20px;
+    margin-top: 10%;
+    filter: drop-shadow(0 0 20px #e94b0d);
+}
+.btn button a{
+    color: #dcdcdc;
+}
+
+.tres{
+    width: 90%;
+    height: 15%;
+    position: relative;
+    z-index: 10;
+    top: -520px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 35px;
+    margin: auto;
+}
+
+.tres h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fffdfd49;
+    filter: drop-shadow(0 0 20px #dcdcdc);
+    color: #2d2d2d;
+    border: 2px solid #dcdcdc;
+}
+
+
+/* RESPONSIVE DEL HERO */
+@media only screen and (max-width: 1600px){
+   .tres{
+    top: -500px;
+   }
+
+   .dos{
+    top: -610px;
+    height: 60%;
+   }
+
+}
+
+@media only screen and (max-width: 1300px){
+   .tres {
+    font-size: 30px;
+   }
+}
+
+@media only screen and (max-width: 1100px){
+    .dos{
+        left: 2%;
+    }
+    .dos h2{
+        font-size: 20px;
+    }
+    .tres h1{
+        font-size: 25px;
+    }
+}
+@media only screen and (max-width: 600px){
+    .dos{
+
+        width: 40%;
+        height: 50%;
+        left: 1%;
+    
+    }
+    
+    .dos h2 {
+        font-size: 15px;
+
+    }
+
+    .btn button {
+        padding: 10px 30px 10px 30px;
+        border-radius: 5px;
+        font-size: 15px;
+        /* padding-top: 20px; */
+        margin-top: 10%;
+    }
+
+    .btn a{
+        text-align: center;
+        justify-content: center;
+    }
+    .tres h1{
+        font-size: 25px;
+    }
+    .tres{
+        top: -430px;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .dos{
+    top: -45%;
+    
+    width: 100%;
+    height: 10%;
+    }
+    .dos h2 {
+        padding-top: 5px;
+        margin-top: 5px;
+    }
+    .tres{
+        top: -170px;
+    }
+}
